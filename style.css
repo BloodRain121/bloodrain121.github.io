@@ -1,0 +1,81 @@
+body {
+    height: 100%;
+    background-color: #0f0f0f;
+    margin: 0px;
+    line-height: 30px;
+    font-family: monospace;
+    text-align: center;
+}
+
+h1 {
+    color: #eeeeee;
+    font-size: 5em;
+}
+
+h2 {
+    color: #eeeeee;
+    font-size: 4em;
+}
+
+h3 {
+    color: #eeeeee;
+    font-size: 3em;
+}
+
+h4 {
+    color: #eeeeee;
+    font-size: 2em;
+}
+
+.rounded {
+    border-radius: 175px 175px 175px 175px;
+}
+
+.modelImg {
+    border-radius: 50px 50px 50px 50px;
+}
+
+.name {
+    padding-bottom: 40px;
+    background-color: #000000;
+}
+
+.portfolio {
+    max-width: 1600px;
+}
+
+.bio{
+    padding-bottom: 40px;
+}
+
+.center {
+    margin-inline: auto;
+}
+
+.links {
+padding-top: 1px;
+background-color: #252525;
+border-radius: 150px 150px 0px 0px;
+}
+
+.image {
+    width: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+@media (width <= 1000px) {
+    .image {
+        flex-wrap: wrap !important;
+    }
+
+    h1 {
+        font-size: 4em;
+    }
+
+    h2 {
+        font-size: 3em;
+    } 
+}
