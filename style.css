@@ -35,19 +35,26 @@ a:hover {
 }
 
 header {
-  background-color: var(--background);
   position: fixed;
   text-align: center;
-  width: 100%;
-  padding: 20px;
-  border-bottom-style: solid;
-  border-bottom-color: var(--highlight);
+  width: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-image: linear-gradient(var(--highlight) 0%, transparent 100%);
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 
 .navlinks {
   font-size: 2rem;
-  padding: 10px;
-  margin-inline: 100px;
+  margin-inline: 110px;
 }
 
 body {
@@ -162,7 +169,7 @@ main {
 .info_card {
   background: rgba(29, 29, 29, 0.7);
   border-color: var(--maincolor);
-  border-radius: 16px;
+  border-radius: 30px;
   font-size: 3em;
   border-style: solid;
   margin: 10px;
@@ -240,6 +247,7 @@ footer {
 
 @media (max-width: 1000px) {
   header {
+    width: 70%;
     padding: 10px;
   }
 
