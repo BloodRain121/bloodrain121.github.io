@@ -118,7 +118,6 @@ header {
 .image img:hover {
   width: 105%;
   height: 105%;
-  filter: drop-shadow(5px 5px 10px var(--highlight));
 }
 
 footer {

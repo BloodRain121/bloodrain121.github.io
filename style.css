@@ -37,7 +37,7 @@ a:hover {
 header {
   position: fixed;
   text-align: center;
-  width: 50%;
+  width: 40%;
   left: 50%;
   transform: translateX(-50%);
   margin-top: 20px;
@@ -54,7 +54,7 @@ header {
 
 .navlinks {
   font-size: 2rem;
-  margin-inline: 110px;
+  margin-inline: 90px;
 }
 
 body {
@@ -245,7 +245,7 @@ footer {
   padding-bottom: 25px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
   header {
     width: 70%;
     padding: 10px;
@@ -257,7 +257,7 @@ footer {
   }
 
   h1 {
-    font-size: 4rem;
+    font-size: 5rem;
   }
 
   h2 {
