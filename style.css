@@ -1,3 +1,7 @@
+html {
+  scrollbar-color: var(--highlight) var(--background);
+}
+
 @font-face {
   font-family: "Thunder";
   src: url(./font/Thunder-BoldLC.otf);
@@ -5,19 +9,6 @@
 
 ::selection {
   background-color: var(--highlight);
-}
-
-::-webkit-scrollbar {
-  background: var(--background);
-}
-
-::-webkit-scrollbar-corner {
-  background: var(--background);
-}
-
-::-webkit-scrollbar-thumb {
-  background: var(--highlight);
-  border-radius: 25px;
 }
 
 :root {
@@ -76,20 +67,13 @@ a {
 }
 
 body {
+  overflow: overlay;
   display: grid;
   grid-template-rows: 1fr auto;
   font-family: sans-serif;
-  overflow: scroll;
-  scrollbar-color: rgb(255, 0, 0), rgb(47, 0, 255);
-  scrollbar-width: thin;
   margin: 0;
+  padding: 0;
   min-height: 100vh;
-}
-
-main {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-image:
     radial-gradient(
       ellipse 30% 40% at left top,
@@ -107,6 +91,12 @@ main {
       transparent 141%
     ),
     linear-gradient(0deg, var(--highlight) 1%, var(--background) 30%);
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 5%;
   padding-inline: 20%;
 }
